@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 1, 2016, 6:07:27 PM
+    Author     : febritecno
+*/
+
+body {
+  background-color: #111;
+}
+
+.blue {
+  border: 8px solid #0ee !important;
+}
+
+.loading {
+  float: left;
+  display: block;
+  height: 20px;
+  width: 35px;
+  background: transparent;
+  border: 7px solid #fff;
+  border-radius: 25px;
+  animation: anim 10s infinite linear;
+  position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+}
+.loading:before, .loading:after {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: -10px;
+  left: -10px;
+  position: absolute;
+  background: #111;
+}
+.loading:after {
+  top: 10px;
+  left: 10px;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+  20% {
+    transform: rotate(1080deg);
+  }
+  30% {
+    transform: rotate(2880deg);
+  }
+  80% {
+    transform: rotate(4320deg);
+  }
+  90% {
+    transform: rotate(5400deg);
+  }
+  100% {
+    transform: rotate(5760deg);
+  }
+}
+@keyframes bright {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
